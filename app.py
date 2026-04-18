@@ -47,7 +47,7 @@ QUESTIONS = [
      "options": {"0": "Unknown / Not specified", "1": "Primary education", "2": "Secondary (10th pass)", "3": "Higher Secondary (12th pass)", "4": "Graduate", "5": "Postgraduate / Professional"}},
     {"field": "Product_Cate", "question": "Select the loan product you are applying for.", "type": "choice",
      "options": {"1": "Secured Loans (Home / Property)", "2": "Vehicle Loans (Car / Two-Wheeler)", "3": "Personal / Consumer Loans", "4": "Business / Commercial Loans"}},
-    {"field": "Loan_Amt", "question": "Enter the loan amount you need (in Rs, between 1 Lac and 1 Crore).", "type": "number"},
+    {"field": "Loan_Amt", "question": "Enter the loan amount you need (in Rs. between 1 Lac and 1 Crore).", "type": "number"},
     {"field": "asset_value", "question": "Enter the approximate value of the asset against which you are taking the loan (in Rs).", "type": "number"},
     {"field": "Housing_Category", "question": "Select your current housing status.", "type": "choice",
      "options": {"1": ["Owner", "Own the property"], "2": ["Lease", "Property on lease"], "3": ["Rent", "Renting the property"]}},
