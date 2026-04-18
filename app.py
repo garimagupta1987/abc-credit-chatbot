@@ -47,7 +47,7 @@ QUESTIONS = [
      "options": {"0": "Unknown / Not specified", "1": "Primary education", "2": "Secondary (10th pass)", "3": "Higher Secondary (12th pass)", "4": "Graduate", "5": "Postgraduate / Professional"}},
     {"field": "Product_Cate", "question": "Select the loan product you are applying for.", "type": "choice",
      "options": {"1": "Secured Loans (Home / Property)", "2": "Vehicle Loans (Car / Two-Wheeler)", "3": "Personal / Consumer Loans", "4": "Business / Commercial Loans"}},
-    {"field": "Loan_Amt", "question": "Enter the loan amount you need (in Rs, between 16,669 and 2,86,947).", "type": "number"},
+    {"field": "Loan_Amt", "question": "Enter the loan amount you need (in Rs, between 1 Lac and 1 Crore).", "type": "number"},
     {"field": "asset_value", "question": "Enter the approximate value of the asset against which you are taking the loan (in Rs).", "type": "number"},
     {"field": "Housing_Category", "question": "Select your current housing status.", "type": "choice",
      "options": {"1": ["Owner", "Own the property"], "2": ["Lease", "Property on lease"], "3": ["Rent", "Renting the property"]}},
@@ -78,7 +78,7 @@ def validate(field, value, session_data=None, options=None):
             return False, "Pincode must be 6 digits."
     elif field == "Loan_Amt":
         if not value.isdigit() or not (16669 <= int(value) <= 286947):
-            return False, "Loan amount must be between Rs 16,669 and Rs 2,86,947."
+            return False, "Loan amount must be between Rs. 1 Lac and Rs. 1 Crore."
     elif field == "asset_value":
         if not value.isdigit() or int(value) <= 0:
             return False, "Please enter a valid asset value greater than 0."
